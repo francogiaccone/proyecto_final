@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="header-image">
+            <img src="../assets/logo.svg" alt="Logo de la empresa" id="image-principal">
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html">HOME</a></li>
+                <li class="nav-item"><a href="juegos.html">JUEGOS</a></li>
+                <li class="nav-item"><a href="nosotros.html">NOSOTROS</a></li>
+                <li class="nav-item"><a href="#" class="active">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrap">
+            <section id="contacto-principal">
+                <div class="contacto-ubicacion">
+                    <p>Ubicación</p>
+                    <p id="ubication">Lalana Radama 124, Antanarivo, Madagascar.</p>
+                </div>
+                <div>
+                    <p>Envíanos un mensaje</p>
+                    <img src="https://cdn-icons-png.flaticon.com/128/1384/1384023.png" alt="WhatsAPP">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1384/1384032.png" alt="Messenger">
+                </div>
+                <div>
+                    <p>Suscríbete al newsletter</p>
+                    <button>Suscribirse</button>
+                </div>
+            </section>
+            <form id="contacto-form">
+                <p>Formulario de contacto</p>
+                <input type="text" id="name" name="name" placeholder="Nombre*" required>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido*" required>
+                <input type="email" id="email" name="email" placeholder="Email*" required>
+                <input type="number" id="telefono" name="telefono" placeholder="Teléfono*" required>
+                <select name="select">
+                    <option value="option1">Madagascar</option>
+                    <option value="option2">España</option>
+                    <option value="option3">Sudamérica</option>
+                    <option value="option4">Otro país</option>
+                </select>
+                <textarea name="comentario" id="" placeholder="Deja un comentario"></textarea>
+                <input type="submit" id="submit" name="submit" placeholder="Enviar">
+            </form>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="wrap-footer">
+            <img src="../assets/logo.svg" alt="Logo CRR2">
+            <div id="footer-info">
+                <a href="">Información legal</a><a href="">Acuerdo de usuario</a>
+                <br>
+                <a href="">Política de privacidad</a>
+                <p>&copy; CRR2. Todos los derechos reservados</p>
+            </div>
+            <div id="redes-sociales">
+                <h5>Redes sociales</h5>
+                <div class="images-footer">
+                    <a href="#"><img class="image-footer" src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png"
+                            alt="Instagram"></a>
+                    <a href="#"><img class="image-footer" src="https://cdn-icons-png.flaticon.com/128/1384/1384028.png"
+                            alt="YouTube"></a>
+                    <a href="#"><img class="image-footer" src="https://cdn-icons-png.flaticon.com/128/1384/1384030.png"
+                            alt="LinkedIn"></a>
+                    <a href="#"><img class="image-footer" src="https://cdn-icons-png.flaticon.com/128/1384/1384033.png"
+                            alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

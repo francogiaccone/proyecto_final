@@ -1,0 +1,17 @@
+#container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 80px auto 150px;
+}
+
+@media (max-width: 768px) {
+    #container {
+        grid-template-rows: 130px auto auto;
+    }
+}
+
+

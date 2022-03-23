@@ -1,0 +1,64 @@
+.wrap {
+    width: 88%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #eee;
+    padding: 20px;
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+    }
+    #ubication {
+        font-size: 1em;
+    }
+
+    #contacto-principal{
+        width: 50%;
+
+        img {
+            width: 60px;
+            cursor: pointer;
+        }
+
+        button {
+            background: transparent;
+            border: 2px solid black;
+            padding: 1em 3em;
+            cursor: pointer;
+        }
+    }
+
+    #contacto-form{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        input, select, textarea {
+            padding: 20px;
+            background-color: #ccc;
+            border: none;
+            margin: 5px 0px;
+        }
+
+        #submit {
+            background-color: transparent;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    .wrap {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+}

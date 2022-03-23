@@ -1,0 +1,92 @@
+.wrap-nosotros {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+
+    .image-nosotros {
+        width: 30%;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+        padding: 0% 5%;
+    }
+
+    button {
+        background-color: transparent;
+        border: 2px solid black;
+        padding: 10px 30px;
+        margin-left: 5%;
+        cursor: pointer;
+    }
+
+    #quienes-somos {
+        background-color: #EFFFFD;
+        padding: 0px 0px 0px 20px;
+        display: flex;
+    }
+
+    #historia {
+        background-color: #B8FFF9;
+        padding: 0px 20px 0px 0px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #equipo {
+        background-color: #85F4FF;
+        padding: 0px 0px 0px 20px;
+        display: flex;
+    }
+
+    #mision {
+        background-color: #42C2FF;
+        padding: 0px 20px 0px 0px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+iframe {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .image-nosotros {
+        width: 10%;
+    }
+
+    p {
+        font-size: 9px !important;
+    }
+
+    #quienes-somos {
+        height: 120px;
+    }
+
+    #historia {
+        height: 120px;
+    }
+    #equipo {
+        height: 120px;
+    }
+    #mision {
+        height: 120px;
+    }
+
+    button {
+        background-color: transparent;
+        border: 2px solid black;
+        padding: 1px 3px !important; 
+        font-size: 0.8em !important;
+    }
+}

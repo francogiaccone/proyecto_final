@@ -1,0 +1,122 @@
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.wrap-juegos1 {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: "game1 game2 game2"
+    "game1 game3 game4";
+    column-gap: 20px;
+    row-gap: 20px;
+
+
+    #game1 {
+        grid-area: game1;
+        background-image: url(https://store-images.s-microsoft.com/image/apps.47379.63407868131364914.bcaa868c-407e-42c2-baeb-48a3c9f29b54.89bb995b-b066-4a53-9fe4-0260ce07e894);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    #game2 {
+        grid-area: game2;
+        background-image: url(https://i0.wp.com/hipertextual.com/wp-content/uploads/2021/10/FIFA-22-New.jpg?fit=1920%2C1080&ssl=1);
+        @extend #game1;
+
+    }
+
+    #game3 {
+        grid-area: game3;
+        background-image: url(https://image.api.playstation.com/cdn/UP0001/CUSA05904_00/IKYAgcRh0k3IOklJSDoNBTk5t5MSm7KE.png);
+        @extend #game1;
+
+    }
+
+    #game4 {
+        grid-area: game4;
+        background-image: url(https://i.blogs.es/6ded62/gta-v/1366_2000.jpeg);
+        @extend #game1;
+
+    }
+
+}
+
+.wrap-juegos2 {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: "game5 game6 game7"
+    "game8 game8 game8";
+    column-gap: 20px;
+    row-gap: 20px;
+
+    #game5 {
+        grid-area: game5;
+        background-image: url(https://s1.eestatic.com/2016/03/15/elandroidelibre/el_androide_libre_109751102_180076813_1706x960.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    #game6 {
+        grid-area: game6;
+        background-image: url(https://i0.wp.com/hipertextual.com/wp-content/uploads/2013/11/Candy-Crush-Saga-1.jpg?fit=1200%2C750&ssl=1);
+        @extend #game5;
+    }
+
+    #game7 {
+        grid-area: game7;
+        background-image: url(https://www.combogamer.com/wp-content/uploads/2018/03/subway-surfers-wide.png);
+        @extend #game5;
+    }
+
+    #game8 {
+        grid-area: game8;
+        background-color: #ccc;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2em;
+        padding: 30px 0px
+    }
+    
+
+}
+
+@media (max-width: 768px) {
+    .wrap-juegos1 {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas: "game1 game1"
+        "game2 game2"
+        "game3 game4";
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .wrap-juegos2 {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas: "game5"
+        "game6"
+        "game7";
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    
+}
