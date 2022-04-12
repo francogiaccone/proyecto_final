@@ -18,7 +18,7 @@
         background-position: center;
 
         .card {
-            width: 30%;
+            max-width: 30%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -26,7 +26,7 @@
             
 
             img {
-                width: 60%;
+                width:200px;
             }
 
             p {
@@ -38,15 +38,16 @@
             button {
                 background-color: transparent;
                 border: 2px solid white;
-                padding: 1em 5em;
+                padding: .8em 3em;
                 color: white;
                 cursor: pointer;
                 transition: all 500ms;
                 font-size: 1em;
+                margin: 20px 0px;
             }
 
             button:hover {
-                padding: 1.2em 5.3em;
+                transform: scale(110%);
                 color: aqua;
                 border: 2px solid aqua ;
             }
@@ -149,13 +150,26 @@
 @media (max-width: 768px) {
 
 #main-index{
-    grid-template-rows: 550px 100px auto !important;
+    grid-template-rows: auto 100px auto !important;
     
     .card {
-        width: 60% !important;
+        max-width: 100% !important;
+        margin: 0px 20px !important;
+        padding: 40px 0px !important;
+        align-items: center !important;
+
+        img {
+            width: 60% !important; 
+        }
+        
+        p {
+            font-size: 1rem !important;
+            margin: 0 !important;
+            text-align: center !important;
+        }
 
         button {
-            width: 100%;
+            padding: 10px 30px !important;
         }
 
     }  
@@ -167,6 +181,7 @@
         margin: 0px;
 
         p {
+            font-size: 15px !important;
             margin: 10px;
         }
 
@@ -186,5 +201,11 @@
     }
 
 
+}
+
+@media (max-width: 768px) {
+    .card p {
+        font-size: 10px !important;
+    }
 }
 }

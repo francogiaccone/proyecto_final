@@ -14,6 +14,10 @@
         font-size: 1em;
     }
 
+    .contacto-ubicacion, .contacto-mensaje, .contacto-newsletter {
+        margin-bottom: 20px;
+    }
+
     #contacto-principal{
         width: 50%;
 
@@ -48,17 +52,30 @@
             cursor: pointer;
         }
 
+        textarea {
+            resize: none;
+        }
+
     }
 }
 
 @media (max-width: 768px) {
 
+p {
+    text-align: center;
+}
     .wrap {
-        width: 90%;
+        width: 100% !important;
+        margin: 0 !important;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+
+        .contacto-newsletter {
+            margin: 0 auto;
+        }
+
     }
 
 }

@@ -1,8 +1,9 @@
-body{
-    background-color: white;
+*{
     margin: 0;
     padding: 0;
-    min-width: 100%;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
 }
 
 @import "layout";
